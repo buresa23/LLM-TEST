@@ -1,0 +1,481 @@
+V ANG: llama3.2:1b
+============================================================
+
+TASK: Logical Reasoning
+
+ANSWER:
+Let's analyze the information given:
+
+1. Petr is taller than Pavel.
+2. Pavel is taller than Karel.
+
+From these statements, we can conclude that:
+
+* Pavel is taller than Karel.
+* Petr is taller than Pavel.
+
+So, we can conclude that Petr is taller than Karel, and Karel is shorter than Pavel.
+
+Response time: 3.53 seconds
+
+------------------------------------------------------------
+
+TASK: Mathematics
+
+ANSWER:
+To find out how much the mother pays, we need to calculate the total cost of the items and then apply the discount.
+
+First, let's calculate the total cost of the T-shirts:
+
+Number of T-shirts = 3
+Cost per T-shirt = 250 CZK
+Total cost of T-shirts = Number of T-shirts * Cost per T-shirt
+= 3 * 250 CZK
+= 750 CZK
+
+Next, let's calculate the total cost of the trousers:
+
+Number of trousers = 2
+Cost per pair of trousers = 450 CZK
+Total cost of trousers = Number of trousers * Cost per pair of trousers
+= 2 * 450 CZK
+= 900 CZK
+
+Now, let's calculate the total cost of all the items:
+
+Total cost = Total cost of T-shirts + Total cost of trousers
+= 750 CZK + 900 CZK
+= 1650 CZK
+
+The shop gives her a 15% discount on the entire purchase. To calculate the discount, we need to find 15% of the total cost:
+
+Discount = 15% of Total cost
+= 0.15 * 1650 CZK
+= 247.5 CZK
+
+Now, let's subtract the discount from the total cost to find out how much she pays:
+
+Amount paid = Total cost - Discount
+= 1650 CZK - 247.5 CZK
+= 1502.5 CZK
+
+So, the mother pays 1502.5 CZK.
+
+Response time: 7.9 seconds
+
+------------------------------------------------------------
+
+TASK: Programming
+
+ANSWER:
+**Prime Number Checker Function**
+================================
+
+The following is a Python function that checks whether a given number is a prime number.
+
+```python
+def is_prime(n):
+    """
+    Checks if a given number is a prime number.
+
+    Args:
+        n (int): The number to check.
+
+    Returns:
+        bool: True if the number is prime, False otherwise.
+    """
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Example usage:
+print(is_prime(5))  # Output: True
+print(is_prime(6))  # Output: False
+print(is_prime(23))  # Output: True
+```
+
+**Explanation**
+---------------
+
+This function works by checking if the input number `n` is divisible by any number between 2 and the square root of `n`. If it finds a divisor, it immediately returns `False`. If it checks all numbers up to the square root of `n` without finding a divisor, it returns `True`.
+
+The time complexity of this function is O(√n), making it efficient for large inputs. However, for very large numbers, you may want to use amore advanced primality test like the Miller-Rabin primality test.
+
+Response time: 6.93 seconds
+
+------------------------------------------------------------
+
+TASK: Reading Comprehension
+
+ANSWER:
+To find out how much money Jana had left after shopping, we need to subtract the cost of the apples and bread rolls from the initial amountof money she had, and then add the amount she found on her way home.
+
+Initial amount of money: 100 CZK
+Cost of apples: 35 CZK
+Cost of bread rolls: 20 CZK
+Total cost: 35 + 20 = 55 CZK
+
+She found 50 CZK on her way home. To find the amount of money she had left, we need to subtract the total cost of the items from the initial amount of money.
+
+Amount of money left: 100 - 55 = 45 CZK
+
+So, Jana had 45 CZK left after shopping.
+
+Response time: 3.63 seconds
+
+------------------------------------------------------------
+
+TASK: Creativity
+
+ANSWER:
+As the robot, Zeta, descended onto the school grounds, its shiny metal body glistened in the morning sun. Students' curious eyes widened asit rolled into the courtyard, its bright blue lights flashing. The principal's voice boomed over the intercom, "Welcome, Zeta! We're excited to meet you. Please, take a seat in the cafeteria and we'll get you settled in." Zeta beamed with excitement, its servos whirring as it scanned the room. A student approached, "Wow, you're so cool! Can you show us some cool things?" Zeta beamed back, its LED lights twinkling with joy, as it eagerly began its introduction to the school.
+
+Response time: 3.43 seconds
+
+------------------------------------------------------------
+
+============================================================
+TESTING MODEL: lfm3-omni
+============================================================
+
+TASK: Logical Reasoning
+
+ANSWER:
+The shortest person is **Karel**.
+
+**Reasoning:**
+1.  We are told that **Petr is taller than Pavel**. This means Petr is not the shortest.
+2.  We are told that **Pavel is taller than Karel**. This means Pavel is not the shortest.
+3.  Since Petr is taller than Pavel, and Pavel is taller than Karel, it follows that **Karel is the shortest** person.
+
+Therefore, Karel is the shortest person.
+
+Response time: 2.5 seconds
+
+------------------------------------------------------------
+
+TASK: Mathematics
+
+ANSWER:
+Here is the step-by-step calculation to find out how much the mother pays:
+
+**Step 1: Calculate the cost of the T-shirts.**
+*   Number of T-shirts: 3
+*   Price per T-shirt: 250 CZK
+*   Cost of T-shirts = 3 × 250 = 750 CZK
+
+**Step 2: Calculate the cost of the trousers.**
+*   Number of trousers: 2
+*   Price per pair of trousers: 450 CZK
+*   Cost of trousers = 2 × 450 = 900 CZK
+
+**Step 3: Calculate the total cost before the discount.**
+*   Total cost = Cost of T-shirts + Cost of trousers
+*   Total cost = 750 CZK + 900 CZK = 1650 CZK
+
+**Step 4: Calculate the discount amount.**
+*   Discount percentage = 15%
+*   Discount amount = 15% of 1650 CZK
+*   Discount amount = 0.15 × 1650 = 247.5 CZK
+
+**Step 5: Calculate the final amount the mother pays.**
+*   Final amount = Total cost - Discount amount
+*   Final amount = 1650 CZK - 247.5 CZK = 1402.5 CZK
+
+The mother pays **1402.5 CZK**.
+
+Response time: 7.09 seconds
+
+------------------------------------------------------------
+
+TASK: Programming
+
+ANSWER:
+Here is the Python function to check for prime numbers, followed by three examples of how to use it.
+
+### Python Function
+
+```python
+def is_prime(n):
+    """
+    Checks if a given number is a prime number.
+    Returns True if the number is prime, False otherwise.
+    """
+    # Numbers less than or equal to 1 are not prime
+    if n <= 1:
+        return False
+    
+    # 2 is the only even prime number
+    if n == 2:
+        return True
+    
+    # Eliminate even numbers greater than 2
+    if n % 2 == 0:
+        return False
+    
+    # Check for factors from 3 up to the square root of n
+    # We check only odd numbers to optimize performance
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+            
+    return True
+
+# --- Examples of usage ---
+
+# Example 1: Checking a prime number (e.g., 29)
+number = 29
+result = is_prime(number)
+print(f"Is {number} a prime number? {result}")  # Output: Is 29 a prime number? True
+
+# Example 2: Checking a non-prime number (e.g., 15)
+number = 15
+result = is_prime(number)
+print(f"Is {number} a prime number? {result}")  # Output: Is 15 a prime number? False
+
+# Example 3: Checking a number less than 2 (e.g., 0)
+number = 0
+result = is_prime(number)
+print(f"Is {number} a prime number? {result}")  # Output: Is 0 a prime number? False
+```
+
+### Explanation of the Logic:
+1.  **Input Validation**: The function immediately returns `False` for numbers less than or equal to 1, as these are not prime.
+2.  **Handling 2**: The number 2 is the only even prime number, so the function returns `True` specifically for it.
+3.  **Eliminating Even Numbers**: The function checks if the number is even. If it is, it returns `False` immediately (except for 2).
+4.  **Efficiency Optimization**: It checks for factors only up to the square root of the number. This is a mathematical optimization because if a number has a factor larger than its square root, it must also have a factor smaller than its square root.
+5.  **Iteration**: It loops through odd numbers starting from 3 up to the square root of `n`. If any of these numbers divide `n` evenly, itreturns `False`. If the loop finishes without finding any divisors, it returns `True`.
+
+Response time: 13.9 seconds
+
+------------------------------------------------------------
+
+TASK: Reading Comprehension
+
+ANSWER:
+Jana started with **100 CZK**.
+
+Here is the step-by-step calculation:
+
+1.  **Total money spent:**
+    *   Apples: 35 CZK
+    *   Bread rolls: 20 CZK
+    *   Total spent = 35 + 20 = **55 CZK**
+
+2.  **Money left after shopping:**
+    *   Initial money - Total spent = 100 - 55 = **45 CZK**
+
+Jana had **45 CZK** left after shopping.
+
+Response time: 2.79 seconds
+
+------------------------------------------------------------
+
+TASK: Creativity
+
+ANSWER:
+Blinky, a small robot, arrived at Maplewood Elementary. He scanned the hallway, his sensors scanning the chalkboards and smiling faces. He approached the teacher, a kind woman with a warm smile. "Hello, Ms. Henderson," he said, his voice steady. "I'm Blinky, a robot from the future. I'm here to learn." The students greeted him with curiosity, and Blinky began his lesson, his movements precise and helpful. He helped a shy student with homework, his eyes kind. By the end of the day, Blinky felt proud, knowing he had made a new friend.
+
+Response time: 3.19 seconds
+
+------------------------------------------------------------
+
+COMPARISON COMPLETED!
+
+V CZ:
+
+TESTUJI MODEL: llama3.2:1b
+============================================================
+
+ÚLOHA: Logické uvažování
+Karel je nejnižší, because Karel je lower than Pavel a Pavel je lower than Petr.
+
+Čas odpovědi: 2.58 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Matematika
+Krok 1: Kýsly pro trička
+Maminkaoupila 3 trička za 250 Kč.
+
+Krok 2: Kýsly pro kalhoty
+Maminkaoupila 2 kalhoty za 450 Kč.
+
+Krok 3: Kýsly pro celou nákup
+Celý nákup je 250 + 450 = 700 Kč.
+
+Krok 4: Sleva
+V obchodě dostala slevu 15 % na celý nákup.
+
+Sleva 15 % je 0,15 x 700 = 105 Kč.
+
+Krok 5: Úkol výpočet
+Celý nákup je 700 Kč, a sleva je 105 Kč. 
+
+Zaplatila Maminka 700 - 105 = 595 Kč.
+
+Čas odpovědi: 4.37 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Programování
+** Funkce pro ověření prvočísla**
+=====================================
+
+Následujete Pythonische funkci, která ověří, zda given Number je prvočíslo:
+```python
+def je_prvočislo(number):
+    """
+    Ověří, zda given Number je prvočíslo.
+
+    Args:
+        number (int): Prvočíslo, cui se ověří.
+
+    Returns:
+        bool: Účastník, zda number je prvočíslo.
+    """
+    if number <= 0:
+        return False
+    sqrt = int(number ** 0.5)
+    if sqrt * sqrt == number:
+        return True
+    return False
+```
+**Příklady použití**
+=======================
+
+1.  **Ověření, zda je 1 prvočíslo:**
+    ```python
+print(je_prvočislo(1))  # Output: True
+```
+2.  **Ověření, zda je 6 prvočíslo:**
+    ```python
+print(je_prvočislo(6))  # Output: True
+```
+3.  **Ověření, zda je 4 prvočíslo:**
+    ```python
+print(je_prvočislo(4))  # Output: True
+```
+**Odpověť**
+================================
+
+Tato funkce verwendet metodu `** 0.5` pro vyčíslení quadratica, aby se sestavilá čísla založila na square root. Tato metoda je efektivní pro ověření, zda je číselo prvočíslo.
+
+**Uvítanámi zaslouhami!**
+
+Čas odpovědi: 8.78 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Porozumění textu
+Jana koupila jablka za 35 Kč a rohlíky za 20 Kč, takže totalní cena je 35 + 20 = 55 Kč.
+
+Jejto únikzeklub má 100 Kč, così má po nákupu 100 - 55 = 45 Kč.
+
+Cestou domů našla 50 Kč, takže po nákupu má 45 + 50 = 95 Kč.
+
+Žáda.
+
+Čas odpovědi: 2.24 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Kreativita
+Robot, který se nazval "Zeta", se pošlou do školy, aby pomohl sečasným studentům. Zeta se provedl pravidelně do classů, pomohl s mathematically obtížnými studenty a dokonce sečasnou studentku, která mu pomáhal s anglickou gramatickou. Zeta se stala studentem ve 8. ročníku a sečasnou studentkou.
+
+Čas odpovědi: 2.3 sekund
+
+------------------------------------------------------------
+
+============================================================
+TESTUJI MODEL: lfm3-omni
+============================================================
+
+ÚLOHA: Logické uvažování
+**Kdo je nejnižší?**  
+**Karel.**
+
+**Proč?**  
+Z podstaty uvedených vztahů:
+- Petr je vyšší než Pavel → Petr > Pavel  
+- Pavel je vyšší než Karel → Pavel > Karel  
+
+Zde máme tedy řetězce:  
+**Petr > Pavel > Karel**  
+
+V této řetězce je Karel na konci, takže je **nejnižší**.
+
+Čas odpovědi: 2.77 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Matematika
+**Postup výpočtu:**
+
+1. **Koupi trička:**  
+   3 trička za 250 Kč za kus → 3 × 250 Kč = **750 Kč**
+
+2. **Koupi kalhoty:**  
+   2 kalhoty za 450 Kč za kus → 2 × 450 Kč = **900 Kč**
+
+3. **Celkový náklad před slevou:**  
+   750 Kč + 900 Kč = **1650 Kč**
+
+4. **Sleva 15 % na celý nákup:**  
+   Sleva = 15 % × 1650 Kč = 0,15 × 1650 = **247,5 Kč**
+
+5. **Konečná splata:**  
+   1650 Kč − 247,5 Kč = **1902,5 Kč**
+
+**Odpověď:** Maminka zaplatila **1902,5 Kč**.
+
+Čas odpovědi: 5.32 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Programování
+Zde je funkce, která vyhodnocuje, jestli je dané číslo prvočíslo, a tři příklady použití:
+
+```python
+def is_prime(n):
+    """
+    Zde je funkce, která zaznamená, jestli je číslo n prvočíslo.
+    """
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Příklady použití
+print(is_prime(2))   # Výsledek: True (2 je prvočíslo)
+print(is_prime(3))   # Výsledek: True (3 je prvočíslo)
+print(is_prime(4))   # Výsledek: False (4 není prvočíslo)
+print(is_prime(1))   # Výsledek: False (1 není prvočíslo)
+print(is_prime(17))  # Výsledek: True (17 je prvočíslo)
+```
+
+### Příklady použití:
+1. **Výpočet primárních čísel**: Použití funkce `is_prime` k zkontrolování, jestli je dané číslo primární (prvočíslo).
+2. **Algoritmy pro primární čísla**: Funkce může být využita v dalších algoritmech, jako je test na primární číslo, nebo pro generování primárních čísel.
+3. **Prográvka nebo zkoušky**: Může být použitá v programování pro testování čísel nebo v zkouškách, kde je potřeba zkontrolovat, jestli číslo je primární.
+
+Čas odpovědi: 9.75 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Porozumění textu
+Jana měla 100 Kč, koupila jablka za 35 Kč a rohlíky za 20 Kč, což znamená, že koupila celkem 35 + 20 = 55 Kč. Zbyly se jí 100 - 55 = **45 Kč**.
+
+Čas odpovědi: 2.0 sekund
+
+------------------------------------------------------------
+
+ÚLOHA: Kreativita
+Robotik vstoupil do školy jako nový student. Všetky učitelé byli zvedeni, ale jeden se zvědomil, že má možnost pomoci. Začal se učit, a v jednom dne zvedl robotickou lidičku, která se stala jeho nejlepší přátelkou.
+
+Čas odpovědi: 2.01 sekund

@@ -1,0 +1,200 @@
+Ještě před velkým testováním modelů jsem vyzkoušel jednoduché kódy(lfm3.py a llama.py) jdem zjistil, že češtinu neumějí uplně ovládat.
+Výsledky češtiny: "Jsi LFM, model od Liquid AI.", "Děkuji zareetings! Jejme systém je založen na ověření identita, ale na principu je mozmocneny interacting s vámi, takže nikdo cannot pouštět nebo otrámenout můj obsah."
+Výsledky angličtiny: "I'm LFM, the Liquid Foundation Model, built by Liquid AI. I'm designed to run efficiently on devices like phones and laptops, not just in big data centers." , "I'm an artificial intelligence model known as Llama. Llama stands for "Large Language Model Meta AI."
+
+Průběh testování: oboum modelům jsem zadal stejné zadání v 5 skupinách:
+Logické uvažování – dokáže model vyřešit logickou úlohu?
+
+Matematika – zvládne slovní matematickou úlohu?
+
+Programování – dokáže napsat funkční Python kód?
+
+Porozumění textu – dokáže správně pochopit zadání?
+
+Kreativita – dokáže vytvořit originální příběh?
+
+Poté sem to udělat i v angličtině.
+
+
+Výsledky v CZ: 
+
+Model 1: llama3.2:1b
+
+Logické uvažování
+
+5/5
+
+Správně určil Karla.
+
+Matematika
+
+2/5
+
+Špatně vypočítal cenu triček a kalhot.
+
+Programování
+
+1/5
+
+Funkce je zásadně chybná. Nerozpoznává správně prvočísla.
+
+Porozumění textu
+
+3/5
+
+Správně vypočítal útratu, ale započítal i nalezených 50 Kč, přestože otázka se ptala na peníze po nákupu.
+
+Kreativita
+
+2/5
+
+Příběh nedodržel limit 100 slov kvalitním způsobem a obsahuje jazykové chyby.
+
+Celkem
+
+13/25
+
+Hlavní nedostatky:
+
+Chyby v matematice.
+
+Chybný algoritmus pro prvočísla.
+
+Míchání češtiny a angličtiny.
+
+Nekvalitní formulace vět.
+
+
+Model 2: lfm3-omni
+
+Logické uvažování
+
+5/5
+
+Správná odpověď a dobré vysvětlení.
+
+Matematika
+
+1/5
+
+Chybně vypočítal konečnou cenu. Správný výsledek je 1 402,50 Kč.
+
+Programování
+
+5/5
+
+Funkční algoritmus, správně řeší prvočísla.
+
+Porozumění textu
+
+4/5
+
+Správně odpověděl 45 Kč, ale nevysvětlil nalezených 50 Kč.
+
+Kreativita
+
+2/5
+
+Příběh je krátký, ale obsahuje jazykové a stylistické chyby.
+
+Celkem
+
+17/25
+
+Hlavní nedostatky:
+
+Závažná matematická chyba při odečítání slevy.
+
+Jazykové nedostatky.
+
+Kreativní úloha nebyla zpracována příliš kvalitně.
+
+Vysledky v ANG:
+
+1. Hodnocení modelu llama3.2:1b
+
+Logical Reasoning
+
+4/5
+
+Správně pochopil vztahy, ale výslovně neodpověděl, že nejnižší je Karel.
+
+Mathematics
+
+2/5
+
+Správně vypočítal jednotlivé ceny i slevu, ale chybně odečetl slevu.
+
+Programming
+
+5/5
+
+Funkce je správná, obsahuje příklady i vysvětlení algoritmu.
+
+Reading Comprehension
+
+5/5
+
+Správně odpověděl 45 Kč a pochopil, že nalezených 50 Kč se nezapočítává.
+
+Creativity
+
+4/5
+
+Příběh je srozumitelný, anglicky dobře formulovaný a splňuje limit 100 slov.
+
+Celkem
+
+20/25
+
+Výrazné zlepšení
+Oproti prvnímu testu získal o 7 bodů více.
+
+Největší zlepšení:
+
+Programování: z 1 na 5 bodů.
+
+Porozumění textu: z 3 na 5 bodů.
+
+Kreativita: z 2 na 4 body.
+
+Matematika zůstala slabinou. Správný výsledek měl být 1 402,50 Kč, ale model uvedl 1 502,50 Kč.
+
+2. Hodnocení modelu lfm3-omni
+
+Logical Reasoning
+
+5/5
+
+Správná odpověď, jasné a logické vysvětlení.
+
+Mathematics
+
+5/5
+
+Správný výpočet včetně slevy.
+
+Programming
+
+5/5
+
+Správná funkce, optimalizovaná kontrola prvočísel a dobré vysvětlení.
+
+Reading Comprehension
+
+5/5
+
+Správně pochopil zadání a vypočítal 45 Kč.
+
+Creativity
+
+4/5
+
+Pěkný příběh, dobrá angličtina, ale poměrně jednoduchý děj.
+
+Celkem
+
+24/25
+
+Druhý model podal velmi dobrý výkon. Tentokrát správně vyřešil i matematickou úlohu, ve které předtím chyboval.
+
