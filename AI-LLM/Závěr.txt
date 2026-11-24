@@ -1,0 +1,6 @@
+Model llama byl převážne rychlejší, ale udělal více chyb. Naopak model ifm3 to dělal déle, ale více správně.
+Můžeme vidět, že mají s češtinou větší problém. V angličtině to šlo mnohem líp.
+
+Podle mě by to šlo použít na nějaké menší úkoly, ale muselo by se komunikovat v angličtině.
+
+Ještě by bylo dobré si přečíst popis modelů, nebo si omylem stáhnete model který převádí text na vektory(embeddinggemma-2:latest).

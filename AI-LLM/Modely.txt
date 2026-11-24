@@ -1,0 +1,3 @@
+lfm3-omni:latest
+embeddinggemma-2:latest
+llama3.2:1b
